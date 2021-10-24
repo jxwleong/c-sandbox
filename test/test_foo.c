@@ -17,4 +17,11 @@ void test_foo_NeedToImplement(void)
     TEST_IGNORE_MESSAGE("Need to Implement foo");
 }
 
+
+void test_foo_bar_expect_return_haha(void)
+{
+    TEST_ASSERT_EQUAL_STRING("haha", bar());
+}
+
+
 #endif // TEST

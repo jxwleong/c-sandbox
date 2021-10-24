@@ -36,4 +36,8 @@
                           # see https://github.com/ThrowTheSwitch/Ceedling/blob/master/docs/CeedlingPacket.md#tool-element-runtime-substitution-notational-substitution
     
     ```
+4. Ceedling plugin
+   `Ceedling Explorer: Debug Configuration` will be using the debug config name at `launch.json`.
+   For my case it's `gcc.exe - Build and debug active file`.
+
 > [How to create ceedling project](https://github.com/jxwleong/HowToCreateCeedlingProject)
