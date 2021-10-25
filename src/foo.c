@@ -1,6 +1,8 @@
+// Copyright 2021 @jxwleong. All rights reserved.
+
 #include "foo.h"
 
 
-char *bar(){
+char *bar() {
     return "haha";
 }

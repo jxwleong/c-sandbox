@@ -1,6 +1,8 @@
-#ifndef FOO_H
-#define FOO_H
+// Copyright 2021 @jxwleong. All rights reserved.
+
+#ifndef SRC_FOO_H_
+#define SRC_FOO_H_
 
 char *bar();
 
-#endif // FOO_H
+#endif // SRC_FOO_H_

@@ -1,3 +1,5 @@
+// Copyright 2021 @jxwleong. All rights reserved.
+
 #include<stdio.h>
 
 int main(){
