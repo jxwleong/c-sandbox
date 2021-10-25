@@ -40,4 +40,44 @@
    `Ceedling Explorer: Debug Configuration` will be using the debug config name at `launch.json`.
    For my case it's `gcc.exe - Build and debug active file`.
 
-> [How to create ceedling project](https://github.com/jxwleong/HowToCreateCeedlingProject)
+> [How to create ceedling project](https://github.com/jxwleong/HowToCreateCeedlingProject)  
+  
+
+  
+##   .vscode
+### launch.json
+Comment will cause github actions superlinter to fail, so put here as workaround.🤣
+```json
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "name": "gcc.exe - Build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}\\build\\test\\out\\${command:ceedlingExplorer.debugTestExecutable}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "C:/MinGW/bin",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            //"miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "miDebuggerPath": "C:\\TDM-GCC-64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            // use ceedling to link and compile the test file executable
+            "preLaunchTask": "ceedling"
+        }
+    ]
+}
+```
