@@ -5,4 +5,4 @@
 
 char *bar();
 
-#endif // SRC_FOO_H_
+#endif  // SRC_FOO_H_

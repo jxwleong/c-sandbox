@@ -1,6 +1,6 @@
 // Copyright 2021 @jxwleong. All rights reserved.
 
-#include "foo.h"
+#include "../src/foo.h"
 
 
 char *bar() {

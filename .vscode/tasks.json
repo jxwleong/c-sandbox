@@ -1,14 +1,14 @@
 {
     "tasks": [
         {
-            "type": "cppbuild",
+            "type": "cppbuild", 
             "label": "C/C++: gcc.exe build active file",
-            "command": "C:/MinGW/bin/gcc.exe",
+            "command": "C:/TDM-GCC-64/bin/gcc.exe",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
-                "${workspaceFolder}\\build\\test\\out\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "C:/MinGW/bin"

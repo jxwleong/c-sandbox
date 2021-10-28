@@ -1,8 +1,8 @@
 // Copyright 2021 @jxwleong. All rights reserved.
 
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main() {
     printf("Hello World");
     return 0;
 }

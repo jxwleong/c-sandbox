@@ -22,4 +22,4 @@ void test_foo_bar_expect_return_haha(void) {
 }
 
 
-#endif // TEST
+#endif  // TEST

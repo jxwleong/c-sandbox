@@ -13,5 +13,10 @@ int main() {
             "add $0x10, %rbx;");
     __asm__("movq %%rbx, %0;" : "=r" (value) :);
     printf("0x%x", value);
+
+    int a = 1;
+    // Looks like will update rax, rbx and rcx to 0x1
+    __asm__("movq %%rax, %%rbx;" : : "s"(a));
+
     return 0;
 }
